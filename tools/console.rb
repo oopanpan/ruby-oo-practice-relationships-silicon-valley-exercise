@@ -10,6 +10,7 @@ end
 google = Startup.new("Google", "Larry Page", "www.google.com")
 apple = Startup.new("Apple", "Steve Jobs", "www.apple.com")
 miranda = Startup.new("The V", "Sydney M.", "www.talktome.com")
+joey = Startup.new("THE P", "Sydney M.", "www.talktomealso.com")
 
 capitalist1 = VentureCapitalist.new("Abraham L.", "10000000000000")
 capitalist2 = VentureCapitalist.new("Donald J. T.", "999999999999999")

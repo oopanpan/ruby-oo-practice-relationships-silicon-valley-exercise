@@ -2,8 +2,8 @@ class Startup
 
     @@all = []
 
-    attr_accessor :name, :domain
-    attr_reader :founder
+    attr_accessor :name
+    attr_reader :founder, :domain
 
     def initialize (name, founder, domain)
         @name = name
@@ -21,12 +21,12 @@ class Startup
         @@all
     end
 
-    def self.find_by_founder(founde_name)
-        self.all.find{|startup| startup.founder == founde_name}
+    def self.find_by_founder(founder_name)
+        self.all.find{|startup| startup.founder == founder_name}
     end
 
     def self.domains
-        self.all.select{|startup| startup.domain}
+        self.all.map{|startup| startup.domain}
     end
 
     def sign_contract(capitalist, type_of_inv, amount_inv)
